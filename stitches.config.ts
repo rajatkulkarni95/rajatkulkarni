@@ -1,5 +1,11 @@
 import { createStitches } from "@stitches/react";
-import {} from "@radix-ui/colors";
+import {
+  amberDark,
+  grassDark,
+  grayDark,
+  purpleDark,
+  redDark,
+} from "@radix-ui/colors";
 
 export const { styled, getCssText, createTheme } = createStitches({
   media: {
@@ -9,7 +15,18 @@ export const { styled, getCssText, createTheme } = createStitches({
     wide: `(1920 <= width)`,
   },
   theme: {
-    fonts: {},
-    colors: {},
+    fonts: {
+      sans: "'Sora', sans-serif",
+      cursive: "'Covered By Your Grace', cursive",
+    },
+    colors: {
+      background: grayDark.gray1,
+      primaryText: grayDark.gray12,
+      secondaryText: grayDark.gray11,
+      header: amberDark.amber10,
+      tagline: grassDark.grass9,
+      clean: redDark.red8,
+      beautiful: purpleDark.purple9,
+    },
   },
 });
