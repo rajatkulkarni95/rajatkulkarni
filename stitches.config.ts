@@ -1,11 +1,5 @@
 import { createStitches } from "@stitches/react";
-import {
-  amberDark,
-  grassDark,
-  grayDark,
-  purpleDark,
-  redDark,
-} from "@radix-ui/colors";
+import { amberDark, grassDark, grayDark, red, violet } from "@radix-ui/colors";
 
 export const { styled, getCssText, createTheme } = createStitches({
   media: {
@@ -25,8 +19,8 @@ export const { styled, getCssText, createTheme } = createStitches({
       secondaryText: grayDark.gray11,
       header: amberDark.amber10,
       tagline: grassDark.grass9,
-      clean: redDark.red8,
-      beautiful: purpleDark.purple9,
+      clean: red.red10,
+      strokeFill: violet.violet11,
     },
   },
 });
