@@ -14,5 +14,10 @@ export const globalStyles = globalCss({
     fontFamily: "$sans",
     background: "$background",
     color: "$primaryText",
+
+    "::selection": {
+      color: "#FFFFFF",
+      background: "$selection",
+    },
   },
 });

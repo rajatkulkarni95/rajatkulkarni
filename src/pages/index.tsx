@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { styled } from "../../stitches.config";
-import { Container, SBSection } from "../styles/Common";
+import { Container, HyperLink, SBSection } from "../styles/Common";
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +12,11 @@ const Home: NextPage = () => {
         <Special type="clean">clean</Special>, accessible and&nbsp;
         <Paint>Beautiful</Paint> experiences.
       </TagLine>
-      <SBSection></SBSection>
+      <SBSection css={{ marginTop: "150px", "@phone": { marginTop: "80px" } }}>
+        <HyperLink href="mailto:rajatkulkarni95@gmail.com">
+          rajatkulkarni95@gmail.com
+        </HyperLink>
+      </SBSection>
     </Container>
   );
 };
@@ -24,13 +28,34 @@ const Title = styled("h1", {
   letterSpacing: "0.055em",
   color: "$header",
   marginTop: "180px",
+
+  "@invertedTablet": {
+    marginTop: "60px",
+  },
+
+  "@tablet": {
+    marginTop: "96px",
+  },
+
+  "@phone": {
+    marginTop: "72px",
+    fontSize: "16px",
+  },
 });
 
 const TagLine = styled("p", {
   fontSize: "56px",
   fontWeight: 700,
-  lineHeight: "80px",
+  // lineHeight: "80px",
   marginTop: "64px",
+
+  "@tablet": {
+    fontSize: "40px",
+  },
+
+  "@phone": {
+    fontSize: "32px",
+  },
 });
 
 const Special = styled("span", {
@@ -52,6 +77,7 @@ const Paint = styled("span", {
   "-webkit-text-stroke-width": "14px",
   "-webkit-text-stroke-color": "#5746AF",
   paintOrder: "stroke fill",
+  margin: "0 8px",
 });
 
 export default Home;

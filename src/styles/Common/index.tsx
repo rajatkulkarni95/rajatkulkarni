@@ -24,3 +24,16 @@ export const SBSection = styled("section", {
   justifyContent: "space-between",
   alignItems: "center",
 });
+
+export const HyperLink = styled("a", {
+  fontSize: "18px",
+  fontWeight: 500,
+  color: "$secondaryText",
+  textDecoration: "inherit",
+  borderBottom: "2px solid $linkHover",
+  cursor: "pointer",
+
+  "@phone": {
+    fontSize: "14px",
+  },
+});
