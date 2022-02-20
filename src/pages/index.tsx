@@ -38,7 +38,7 @@ const Title = styled("h1", {
   },
 
   "@phone": {
-    marginTop: "72px",
+    marginTop: "56px",
     fontSize: "16px",
   },
 });
@@ -55,6 +55,7 @@ const TagLine = styled("p", {
 
   "@phone": {
     fontSize: "32px",
+    marginTop: "48px",
   },
 });
 

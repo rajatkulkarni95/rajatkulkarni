@@ -12,7 +12,7 @@ export const Container = styled("main", {
   },
   "@phone": {
     width: "100%",
-    padding: "16px",
+    padding: "16px 32px",
   },
   display: "flex",
   flexDirection: "column",
