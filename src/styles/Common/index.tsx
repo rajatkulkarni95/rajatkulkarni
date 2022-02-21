@@ -32,6 +32,14 @@ export const HyperLink = styled("a", {
   textDecoration: "inherit",
   borderBottom: "2px solid $linkHover",
   cursor: "pointer",
+  padding: "0 4px",
+  borderTopLeftRadius: "4px",
+  borderTopRightRadius: "4px",
+
+  "&:hover": {
+    background: "$linkHover",
+    transitionDuration: "0.2s",
+  },
 
   "@phone": {
     fontSize: "14px",

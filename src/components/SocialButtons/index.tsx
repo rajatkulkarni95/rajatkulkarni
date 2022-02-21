@@ -4,7 +4,9 @@ import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialButtons = () => {
   return (
-    <AlignCenter css={{ margin: "16px 0", "@phone": { marginBottom: "24px" } }}>
+    <AlignCenter
+      css={{ margin: "16px 8px", "@phone": { marginBottom: "24px" } }}
+    >
       <ClickableIcon
         as="a"
         href="https://www.linkedin.com/in/rajatkulkarni95/"
