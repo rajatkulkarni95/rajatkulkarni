@@ -35,6 +35,7 @@ export const { styled, getCssText, createTheme } = createStitches({
       selection: crimsonDark.crimson6,
       tooltipBg: grayDark.gray3,
       outline: indigoDark.indigo9,
+      hover: grayDark.gray4,
     },
   },
 });

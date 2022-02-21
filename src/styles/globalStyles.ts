@@ -14,7 +14,7 @@ export const globalStyles = globalCss({
     fontFamily: "$sans",
     background: "$background",
     color: "$primaryText",
-
+    transition: "background 0.3s ease",
     "::selection": {
       color: "#FFFFFF",
       background: "$selection",

@@ -14,7 +14,7 @@ export const IconButton = styled("button", {
   display: "flex",
   height: "fit-content",
   "&:hover": {
-    background: "$tooltipBg",
+    background: "$hover",
   },
 
   "&:focus": {

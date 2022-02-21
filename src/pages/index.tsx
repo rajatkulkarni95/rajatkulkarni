@@ -8,9 +8,8 @@ const Home: NextPage = () => {
     <Container>
       <Title>Rajat Kulkarni</Title>
       <TagLine>
-        UI focused <Special>Product Engineer</Special> with a passion for
-        making&nbsp;
-        <Special type="clean">clean</Special>, accessible and&nbsp;
+        UI focused <Special>Product Engineer</Special> with a passion for making
+        clean, accessible and&nbsp;
         <Paint>Beautiful experiences</Paint>
       </TagLine>
       <SBSection
