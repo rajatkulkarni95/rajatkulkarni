@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         UI focused <Special>Product Engineer</Special> with a passion for
         making&nbsp;
         <Special type="clean">clean</Special>, accessible and&nbsp;
-        <Paint>Beautiful</Paint> experiences.
+        <Paint>Beautiful experiences</Paint>
       </TagLine>
       <SBSection css={{ marginTop: "150px", "@phone": { marginTop: "80px" } }}>
         <HyperLink href="mailto:rajatkulkarni95@gmail.com">
@@ -79,6 +79,11 @@ const Paint = styled("span", {
   "-webkit-text-stroke-color": "#5746AF",
   paintOrder: "stroke fill",
   margin: "0 8px",
+
+  "@phone": {
+    display: "inline-block",
+    width: "100%",
+  },
 });
 
 export default Home;
