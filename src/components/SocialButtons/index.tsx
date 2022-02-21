@@ -1,11 +1,11 @@
-import { ClickableIcon } from "@components/Buttons/Icon";
+import { ClickableIcon, LinkButton } from "@components/Buttons/Icon";
 import { AlignCenter } from "@styles/Common";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialButtons = () => {
   return (
     <AlignCenter
-      css={{ margin: "16px 8px", "@phone": { marginBottom: "24px" } }}
+      css={{ margin: "16px 8px", "@phone": { margin: "0 0 24px 0" } }}
     >
       <ClickableIcon
         as="a"
@@ -26,6 +26,9 @@ const SocialButtons = () => {
         icon={<FaTwitter />}
         tooltip="Twitter"
       />
+      <LinkButton href="https://read.cv/rajatk" css={{ marginLeft: "8px" }}>
+        Read CV
+      </LinkButton>
     </AlignCenter>
   );
 };

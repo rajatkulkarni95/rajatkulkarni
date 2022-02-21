@@ -71,3 +71,19 @@ export const ClickableIcon = ({
     </TooltipProvider>
   );
 };
+
+export const LinkButton = styled("a", {
+  padding: "8px 16px",
+  borderRadius: "4px",
+  border: "2px solid $secondaryText",
+  color: "$primaryText",
+  fontFamily: "$sans",
+  textDecoration: "none",
+  fontSize: "14px",
+
+  "&:hover": {
+    background: "$primaryText",
+    color: "$background",
+    borderColor: "transparent",
+  },
+});

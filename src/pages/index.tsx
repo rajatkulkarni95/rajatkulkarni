@@ -22,7 +22,10 @@ const Home: NextPage = () => {
           },
         }}
       >
-        <HyperLink href="mailto:rajatkulkarni95@gmail.com">
+        <HyperLink
+          href="mailto:rajatkulkarni95@gmail.com"
+          css={{ "@phone": { marginLeft: "4px" } }}
+        >
           rajatkulkarni95@gmail.com
         </HyperLink>
         <SocialButtons />
