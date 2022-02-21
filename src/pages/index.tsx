@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { styled } from "../../stitches.config";
-import { Container, HyperLink, SBSection } from "../styles/Common";
+import { Container, HyperLink, SBSection } from "@styles/Common";
+import SocialButtons from "@components/SocialButtons";
 
 const Home: NextPage = () => {
   return (
@@ -12,10 +13,20 @@ const Home: NextPage = () => {
         <Special type="clean">clean</Special>, accessible and&nbsp;
         <Paint>Beautiful experiences</Paint>
       </TagLine>
-      <SBSection css={{ marginTop: "150px", "@phone": { marginTop: "80px" } }}>
+      <SBSection
+        css={{
+          marginTop: "150px",
+          "@phone": {
+            marginTop: "40px",
+            flexDirection: "column-reverse",
+            alignItems: "flex-start",
+          },
+        }}
+      >
         <HyperLink href="mailto:rajatkulkarni95@gmail.com">
           rajatkulkarni95@gmail.com
         </HyperLink>
+        <SocialButtons />
       </SBSection>
     </Container>
   );

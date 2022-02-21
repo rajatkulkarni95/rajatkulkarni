@@ -6,6 +6,7 @@ import {
   red,
   violet,
   amber,
+  indigoDark,
 } from "@radix-ui/colors";
 
 export const { styled, getCssText, createTheme } = createStitches({
@@ -31,6 +32,8 @@ export const { styled, getCssText, createTheme } = createStitches({
       strokeFill: violet.violet11,
       linkHover: grayDark.gray8,
       selection: amber.amber10,
+      tooltipBg: grayDark.gray3,
+      outline: indigoDark.indigo9,
     },
   },
 });

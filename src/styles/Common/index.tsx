@@ -37,3 +37,13 @@ export const HyperLink = styled("a", {
     fontSize: "14px",
   },
 });
+
+export const FlexColumn = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+});
+
+export const AlignCenter = styled("div", {
+  display: "flex",
+  alignItems: "center",
+});
